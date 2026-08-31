@@ -1,0 +1,120 @@
+4q:
+  geo_params:
+  - ase_model: FIRE
+    f_max: 5
+    mask: &id001
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: false
+  - ase_model: FIRE
+    f_max: 3
+    mask: &id002
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: true
+  - ase_model: LBFGS
+    f_max: 0.05
+    mask: &id003
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    model_type: omc
+    steplength: 0.02
+    use_cell_filter: true
+  status: completed
+6q:
+  geo_params:
+  - ase_model: FIRE
+    f_max: 5
+    mask: *id001
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: false
+  - ase_model: FIRE
+    f_max: 3
+    mask: *id002
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: true
+  - ase_model: LBFGS
+    f_max: 0.05
+    mask: *id003
+    model_type: omc
+    steplength: 0.02
+    use_cell_filter: true
+  status: completed
+optimized_4q:
+  geo_params:
+  - ase_model: FIRE
+    f_max: 5
+    mask: *id001
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: false
+  - ase_model: FIRE
+    f_max: 3
+    mask: *id002
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: true
+  - ase_model: LBFGS
+    f_max: 0.05
+    mask: *id003
+    model_type: omc
+    steplength: 0.02
+    use_cell_filter: true
+  status: completed
+optimized_6q:
+  geo_params:
+  - ase_model: FIRE
+    f_max: 5
+    mask:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: false
+  - ase_model: FIRE
+    f_max: 3
+    mask:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    model_type: omc
+    steplength: 0.05
+    use_cell_filter: true
+  - ase_model: LBFGS
+    f_max: 0.05
+    mask:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    model_type: omc
+    steplength: 0.02
+    use_cell_filter: true
+  status: completed
